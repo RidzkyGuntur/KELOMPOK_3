@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'news.dart';
 
-import 'package:flutter/material.dart';
+
 
 class NewsDetailScreen extends StatefulWidget {
   const NewsDetailScreen({
