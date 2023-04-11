@@ -81,7 +81,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                 const SizedBox(width: 8),
                 const Flexible(
                   child: Text(
-                    "Profile Detail",
+                    "Profile Detaile",
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
