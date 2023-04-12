@@ -247,7 +247,7 @@ class LatestNewsCard extends StatelessWidget {
                     child: AspectRatio(
                       aspectRatio: 1 / 1,
                       child: Image.network(
-                        "https://picsum.photos/200",
+                        "https://awsimages.detik.net.id/community/media/visual/2017/12/06/6414c1ae-fcd1-49a6-8316-4a71c29f93ff_43.jpg?w=700&q=90",
                       ),
                     ),
                   ),
@@ -256,7 +256,109 @@ class LatestNewsCard extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      "${i + 1}. Laboris fugiat eiusmod consequat aliqua eiusmod.",
+                      "BERITA PERTAMA",
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(
+              8,
+            ),
+            color: Colors.white,
+            boxShadow: const [
+              BoxShadow(
+                spreadRadius: 1,
+                color: Colors.black12,
+              ),
+            ],
+          ),
+          child: InkWell(
+            onTap: () {
+              GoRouter.of(context).goNamed(
+                AppRoutes.newsDetail,
+                params: {
+                  "id": i.toString(),
+                },
+              );
+            },
+            child: Row(
+              children: [
+                SizedBox(
+                  width: size.width * 0.25,
+                  child: ClipRRect(
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(8),
+                      bottomLeft: Radius.circular(8),
+                    ),
+                    child: AspectRatio(
+                      aspectRatio: 1 / 1,
+                      child: Image.network(
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_RjRAHNdYhgvg-fmd8AV-9GEzFAtwREaTTA&usqp=CAU",
+                      ),
+                    ),
+                  ),
+                ),
+                Flexible(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      "BERITA KADUA.",
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(
+              8,
+            ),
+            color: Colors.white,
+            boxShadow: const [
+              BoxShadow(
+                spreadRadius: 1,
+                color: Colors.black12,
+              ),
+            ],
+          ),
+          child: InkWell(
+            onTap: () {
+              GoRouter.of(context).goNamed(
+                AppRoutes.newsDetail,
+                params: {
+                  "id": i.toString(),
+                },
+              );
+            },
+            child: Row(
+              children: [
+                SizedBox(
+                  width: size.width * 0.25,
+                  child: ClipRRect(
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(8),
+                      bottomLeft: Radius.circular(8),
+                    ),
+                    child: AspectRatio(
+                      aspectRatio: 1 / 1,
+                      child: Image.network(
+                        "https://png.pngtree.com/png-clipart/20201208/original/pngtree-crazy-monkey-with-3d-glasses-png-image_5537768.jpg",
+                      ),
+                    ),
+                  ),
+                ),
+                Flexible(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      " BERITA KATILU",
                     ),
                   ),
                 ),
@@ -285,7 +387,7 @@ class LatestNewsSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 1; i++)
           LatestNewsCard(
             size: size,
             i: i,
