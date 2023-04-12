@@ -84,7 +84,7 @@ class AppRoutes {
           ),
           GoRoute(
             name: newsDetail,
-            path: "news-detail/:id/:title/:content/:imagePath",
+            path: "news-detail",
             pageBuilder: _newsDetailScreenBuilder,
           ),
           GoRoute(
